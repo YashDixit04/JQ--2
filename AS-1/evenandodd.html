@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+    <title>EvenandOdd</title>
+</head>
+<body>
+    <h1>FIND EVEN AND ODD !</h1>
+    <input type="number" name="" id="number" placeholder="entre no">
+    <button id="take">take</button>
+    <p id="output"></p>
+</body>
+<script>
+      $(document).ready(function () {
+        $("#take").click(function () {
+            var a = $("#number").val();
+            var c = $("#output").val();
+            if(a%2 == 0){
+                $("#output").text("Your number is:"+ a +" Even");
+        }
+            else{
+                $("#output").text("Your number is:"+ a +" Odd");
+            }
+        });
+    });
+  
+
+</script>
+</html>

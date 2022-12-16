@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>JQuery Ex</title>
+	<script src='https://code.jquery.com/jquery-3.6.0.min.js'></script>
+	<style>
+		.abc{
+			background-color: yellow;
+		}
+	</style>
+</head>
+
+<body>
+	<h1 class="abc">My Jquery</h1>
+	<button id='b1'>Click me</button>
+	<div>
+		<p>I am Learning JQUERY</p>
+		<p id="pp">Hello </p>
+		<p class="abc">I Love u</p>
+	</div>
+</body>
+<script>
+	$(document).ready(function () {
+		$("#b1").click(function () {
+			// $("h1").text("YASH DIXIT");
+			// $("p").text("YASH DIXIT");
+			// $("#pp").text("YASH DIXIT");
+			$(".abc").text("YASH DIXIT");
+		});
+	});
+</script>
+
+</html>
